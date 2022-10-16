@@ -1,0 +1,18 @@
+<h3>Novo</h3>
+<hr>
+<form action="/clientes/save" method="POST">
+    <div class="form-group">
+        <input type="hidden" name="id" value="{{cliente.id}}">
+        
+        <label for="txtnome">Nome:</label>
+        <input type="text" name="nome" class="form-control" id="txtnome" value="{{cliente.nome}}" required>
+        <label for="txtendereco">Endereço:</label>
+        <input type="text" name="endereco" class="form-control" id="txtendereco" value="{{cliente.endereco}}">
+        <label for="txtsexo">Sexo:</label>
+        <input type="text" name="sexo" class="form-control" id="txtsexo" value="{{cliente.sexo}}">
+        <label for="txttelefone">Telefone:</label>
+        <input type="text" name="telefone" class="form-control" id="txttelefone" value="{{cliente.telefone}}">
+    </div>
+    <hr>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
