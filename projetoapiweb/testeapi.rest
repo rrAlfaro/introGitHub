@@ -1,0 +1,35 @@
+### chamada GET para /clientes
+GET http://localhost:3000/api/v1/clientes/
+
+###
+GET http://localhost:3000/api/v1/clientes/1
+
+###
+GET http://localhost:3000/api/v1/clientes/nome/Mariazinha
+
+###
+POST http://localhost:3000/api/v1/clientes/
+content-type: application/json
+
+{
+    "nome": "Huguinho",
+    "endereco": "Rua lelele 300",
+    "sexo": "Masculino",
+    "telefone": "5555-1234"
+}
+
+###
+PUT http://localhost:3000/api/v1/clientes/1
+content-type: application/json
+
+{
+    "nome": "Zezinho da Silva",
+    "endereco": "Rua lalala 100",
+    "sexo": "Masculino",
+    "telefone": "5555-1234"
+}
+
+###
+DELETE http://localhost:3000/api/v1/clientes/1
+content-type: application/json
+
